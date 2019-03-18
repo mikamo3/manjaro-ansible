@@ -1,0 +1,13 @@
+---
+- name: install bash
+  pacman:
+    name: bash,bash-completion
+  tags:
+    - shell
+    - bash
+- name: install zsh
+  pacman:
+    name: zsh,zsh-completions
+  tags:
+    - shell
+    - zsh

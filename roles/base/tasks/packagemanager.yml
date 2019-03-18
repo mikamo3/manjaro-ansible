@@ -1,3 +1,4 @@
+---
 - name: pacman
   block:
     - name: copy pacman conf

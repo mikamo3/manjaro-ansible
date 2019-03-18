@@ -3,6 +3,8 @@ user:
   uid: 1000
   name: mikamo
   shell: /usr/bin/zsh
+  github:
+    pubkey_name_pref: 'manjaro'
 
 aur:
   helper: yay
