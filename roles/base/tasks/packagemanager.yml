@@ -1,0 +1,21 @@
+- name: pacman
+  block:
+    - name: copy pacman conf
+      copy:
+        src: pacman.conf
+        dest: /etc/pacman.conf
+
+    - name: select mirror list
+      command: pacman-mirrors -c Japan
+      changed_when: False
+
+    - name: update pacman cache
+      pacman:
+        update_cache: yes
+      changed_when: False
+  tags: pacman
+
+- name: install aur helper
+  pacman:
+    name: '{{ aur.helper }}'
+  tags: aur

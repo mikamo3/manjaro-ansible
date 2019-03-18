@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - { role: base, tags: ['base'] }
+  vars_prompt:
+    - name: user_password
+      prompt: input user password
+      private: yes
+    - name: user_github_token
+      prompt: input github token (for regist pubkey)
+      private: yes
