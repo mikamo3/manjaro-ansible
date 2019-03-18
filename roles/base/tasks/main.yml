@@ -2,9 +2,15 @@
 - include: packagemanager.yml
   tags:
     - packagemanager
+- include: base_package.yml
+  tags:
+    - base_package
 - include: user.yml
   tags:
     - user
 - include: shell.yml
   tags:
     - shell
+- include: sshd.yml
+  tags:
+    - sshd
