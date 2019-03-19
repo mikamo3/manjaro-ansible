@@ -1,0 +1,9 @@
+---
+- name: install virtualbox Guest Additions
+  pacman:
+    name: virtualbox-guest-dkms,virtualbox-guest-utils
+
+- name: enable virtualbox Guest Additions
+  service:
+    name: vboxservice
+    enabled: yes

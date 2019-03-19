@@ -14,3 +14,9 @@
 - include: sshd.yml
   tags:
     - sshd
+- include: virtualbox_guest.yml
+  tags:
+    - virtualbox_guest
+  when:
+    - ansible_facts['virtualization_role'] == "guest"
+    - ansible_facts['virtualization_type'] == "virtualbox"
