@@ -1,0 +1,3 @@
+[submodule "kewlfft/ansible-aur"]
+	path = library/ansible-aur
+	url = https://github.com/kewlfft/ansible-aur.git

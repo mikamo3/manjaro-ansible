@@ -13,9 +13,9 @@
         generate_ssh_key: yes
         ssh_key_passphrase: '{{ user_password }}'
         ssh_key_bits: 4096
-    - name: configure sudo
-      copy:
-        src: sudoers
+    - name: set sudo config
+      template:
+        src: sudoers.j2
         dest: /etc/sudoers
         mode: '440'
         owner: root
