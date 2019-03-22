@@ -20,3 +20,9 @@
   when:
     - ansible_facts['virtualization_role'] == "guest"
     - ansible_facts['virtualization_type'] == "virtualbox"
+- include: network.yml
+  tags:
+    - network
+- include: preference.yml
+  tags:
+    - preference

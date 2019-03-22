@@ -1,0 +1,31 @@
+---
+- name: numlock on tty
+  block:
+    - name: install numlock on tty
+      become: yes
+      become_user: '{{user.name}}'
+      aur:
+        name: systemd-numlockontty
+    - name: enable numlock on tty
+      service:
+        name: numLockOnTty.service
+        enabled: yes
+  tags:
+    - numLockOnTty
+
+- name: set vconsole
+  template:
+    src: vconsole.conf.j2
+    dest: /etc/vconsole.conf
+    mode: '0644'
+  tags:
+    - locale
+    - keymap
+
+- name: set locale
+  template:
+    src: locale.conf.j2
+    dest: /etc/locale.conf
+    mode: '0644'
+  tags:
+    - locale

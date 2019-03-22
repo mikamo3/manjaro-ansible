@@ -7,6 +7,7 @@
     - name: user_password
       prompt: input user password
       private: yes
+      confirm: yes
     - name: user_github_token
       prompt: input github token (for regist pubkey)
       private: yes
