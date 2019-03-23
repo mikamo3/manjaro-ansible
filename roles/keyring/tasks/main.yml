@@ -1,0 +1,6 @@
+---
+- name: install keyring
+  pacman:
+    name:
+      - gnome-keyring
+      - seahorse
