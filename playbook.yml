@@ -3,6 +3,7 @@
   remote_user: root
   roles:
     - { role: base, tags: ['base'] }
+    - { role: fonts, tags: ['fonts'] }
   vars_prompt:
     - name: user_password
       prompt: input user password
