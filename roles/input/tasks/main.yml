@@ -1,0 +1,19 @@
+- name: fcitx
+  block:
+    - name: install fcitx
+      pacman:
+        name:
+          - fcitx
+          - fcitx-configtool
+          - fcitx-gtk2
+          - fcitx-gtk3
+          - fcitx-mozc
+          - fcitx-qt4
+          - fcitx-qt5
+    - name: configure xprofile
+      copy:
+        src: xprofile
+        dest: /etc/xprofile
+        mode: '0644'
+  tags:
+    - fcitx

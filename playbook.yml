@@ -6,6 +6,7 @@
     - { role: fonts, tags: ['fonts'] }
     - { role: kmscon, tags: ['kmscon'] }
     - { role: gui, tags: ['gui'] }
+    - { role: input, tags: ['input'] }
   vars_prompt:
     - name: user_password
       prompt: input user password
