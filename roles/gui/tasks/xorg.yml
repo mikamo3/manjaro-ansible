@@ -22,3 +22,9 @@
 - name: install xorg
   pacman:
     name: xorg-server,xorg-apps,mesa
+
+- name: config keymap
+  template:
+    src: 00-keyboard.conf.j2
+    dest: /etc/X11/xorg.conf.d/00-keyboard.conf
+    mode: '0644'
