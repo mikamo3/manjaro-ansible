@@ -1,0 +1,14 @@
+---
+- name: install kmscon
+  pacman:
+    name: kmscon
+- name: configure kmscon service
+  lineinfile:
+    path: /usr/lib/systemd/system/kmsconvt@.service
+    regexp: ^ExecStart
+    line: 'ExecStart=/usr/bin/kmscon "--vt=%I" --seats=seat0 --no-switchvt --xkb-layout={{ locale.locale }}'
+- name: enable kmscon
+  file:
+    src: /usr/lib/systemd/system/kmsconvt@.service
+    dest: /etc/systemd/system/autovt@.service
+    state: link

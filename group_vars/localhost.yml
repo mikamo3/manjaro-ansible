@@ -7,6 +7,7 @@ user:
     pubkey_name_pref: 'manjaro'
 
 locale:
+  locale: jp
   lang: ja_JP.UTF-8
   keymap: jp106
 
