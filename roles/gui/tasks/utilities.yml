@@ -1,0 +1,24 @@
+---
+- name: install numlockx
+  pacman:
+    name: numlockx
+- name: install alacritty
+  pacman:
+    name: alacritty
+  tags:
+    - terminal
+- name: install rofi
+  pacman:
+    name: rofi
+- name: install polybar
+  pacman:
+    name: polybar
+- name: install compton
+  pacman:
+    name: compton
+- name: install dex
+  pacman:
+    name: dex
+- name: install dunst
+  pacman:
+    name: dunst

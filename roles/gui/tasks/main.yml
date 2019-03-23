@@ -1,0 +1,15 @@
+---
+- include: xorg.yml
+  tags:
+    - xorg
+- include: lightdm.yml
+  tags:
+    - lightdm
+    - displaymanager
+- include: i3.yml
+  tags:
+    - i3
+    - windowmanager
+- include: utilities.yml
+  tags:
+    - utilities

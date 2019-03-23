@@ -13,3 +13,6 @@ locale:
 
 aur:
   helper: yay
+
+xorg:
+  driver: virtualbox
