@@ -1,0 +1,7 @@
+---
+- name: install alsa,pulseaudio
+  pacman:
+    name:
+      - alsa-utils
+      - pavucontrol
+      - pulseaudio
