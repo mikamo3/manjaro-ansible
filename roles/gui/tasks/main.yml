@@ -10,6 +10,6 @@
   tags:
     - i3
     - windowmanager
-- include: utilities.yml
+- include: preference.yml
   tags:
-    - utilities
+    - preference

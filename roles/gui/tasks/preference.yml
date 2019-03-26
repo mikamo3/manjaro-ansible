@@ -1,0 +1,12 @@
+---
+- name: install numlockx
+  pacman:
+    name: numlockx
+- name: install alacritty
+  pacman:
+    name: alacritty
+  tags:
+    - terminal
+- name: install dunst
+  pacman:
+    name: dunst
