@@ -1,0 +1,16 @@
+---
+- name: install zplug
+  become: yes
+  become_user: '{{ user.name }}'
+  aur:
+    name: zplug
+  tags:
+    - zsh
+- name: install neofetch
+  pacman:
+    name: neofetch
+  tags:
+    - neofetch
+- name: install xsel
+  pacman:
+    name: xsel
