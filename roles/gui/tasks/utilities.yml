@@ -22,3 +22,6 @@
 - name: install dunst
   pacman:
     name: dunst
+- name: install feh
+  pacman:
+    name: feh
