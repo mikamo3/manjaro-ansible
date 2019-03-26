@@ -21,7 +21,7 @@
 
 - name: install xorg
   pacman:
-    name: xorg-server,xorg-apps,mesa
+    name: xorg-server,xorg-apps,mesa,xterm
 
 - name: config keymap
   template:
