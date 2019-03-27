@@ -9,8 +9,9 @@
 - name: install neofetch
   pacman:
     name: neofetch
-  tags:
-    - neofetch
 - name: install xsel
   pacman:
     name: xsel
+- name: install fzf
+  pacman:
+    name: fzf
