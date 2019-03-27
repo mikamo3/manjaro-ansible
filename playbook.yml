@@ -9,7 +9,9 @@
     - { role: input, tags: ['input'] }
     - { role: keyring, tags: ['keyring'] }
     - { role: sound, tags: ['sound'] }
+    - { role: browsers, tags: ['browsers'] }
     - { role: utilities, tags: ['utilities'] }
+
   vars_prompt:
     - name: user_password
       prompt: input user password
