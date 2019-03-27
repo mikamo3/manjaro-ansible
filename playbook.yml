@@ -10,6 +10,7 @@
     - { role: keyring, tags: ['keyring'] }
     - { role: sound, tags: ['sound'] }
     - { role: browsers, tags: ['browsers'] }
+    - { role: editors, tags: ['editors'] }
     - { role: utilities, tags: ['utilities'] }
 
   vars_prompt:
