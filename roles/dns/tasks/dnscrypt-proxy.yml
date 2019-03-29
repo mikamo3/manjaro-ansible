@@ -1,0 +1,16 @@
+---
+- name: install dnscrypt-proxy
+  pacman:
+    name: dnscrypt-proxy
+- name: setting dnscrypt-proxy
+  template:
+    src: '{{ item }}.j2'
+    dest: '/etc/dnscrypt-proxy/{{ item }}'
+    mode: '0644'
+  with_items:
+    - dnscrypt-proxy.toml
+    - forwarding-rules.txt
+- name: enable dnscrypt-proxy
+  service:
+    name: dnscrypt-proxy.service
+    enabled: yes

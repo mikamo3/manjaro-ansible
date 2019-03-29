@@ -1,0 +1,13 @@
+---
+- name: install unbound
+  pacman:
+    name: unbound
+- name: configure unbound
+  template:
+    src: unbound.conf.j2
+    dest: /etc/unbound/unbound.conf
+    mode: '0644'
+- name: enable unbound
+  service:
+    name: unbound.service
+    enabled: yes
