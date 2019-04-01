@@ -21,19 +21,13 @@ dns:
   dnscrypt:
     port: 15353
     servers:
-      - bn-fr0
-      - bn-fr1
-      - bn-nl0
-      - dnscrypt.ca-1
-      - dnscrypt.ca-2
-      - dnscrypt.eu-dk
-      - dnscrypt.eu-nl
-      - dnscrypt.org-fr
-      - ns0.dnscrypt.is
-      - securedns
+      - cloudflare
+      - google
     forwards:
-      - { name: mikamosrv.org, ip: 192.168.100.40 }
-  unbound:
-    forward_server:
+      - name: mikamosrv.org
+        ip: 192.168.100.40
+  dnsmasq:
+    host: 127.0.0.1
+    upstream:
       host: 127.0.0.1
       port: 15353
