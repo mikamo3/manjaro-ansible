@@ -13,6 +13,7 @@
     - { role: editors, tags: ['editors'] }
     - { role: utilities, tags: ['utilities'] }
     - { role: dns, tags: ['dns'] }
+    - { role: passwordmanager, tags: ['passwordmanager'] }
 
   vars_prompt:
     - name: user_password
