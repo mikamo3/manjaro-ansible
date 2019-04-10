@@ -11,13 +11,15 @@
       - noto-fonts
       - noto-fonts-cjk
       - noto-fonts-emoji
+      - ttf-nerd-fonts-symbols
+
 - name: install fonts (aur)
   become: yes
   become_user: '{{ user.name }}'
   aur:
     use: '{{ aur.helper }}'
     name:
-      - nerd-fonts-ricty
+      #      - nerd-fonts-ricty
       - ttf-cica
 - name: configure noto
   file:
