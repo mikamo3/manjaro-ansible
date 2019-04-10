@@ -11,7 +11,6 @@
         shell: '{{ user.shell }}'
         password: "{{ user_password | password_hash('sha512') }}"
         generate_ssh_key: yes
-        ssh_key_passphrase: '{{ user_password }}'
         ssh_key_bits: 4096
     - name: set sudo config
       template:
