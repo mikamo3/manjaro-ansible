@@ -10,9 +10,10 @@
       command: pacman-mirrors -c Japan
       changed_when: False
 
-    - name: update pacman cache
+    - name: upgrade pacman cache
       pacman:
         update_cache: yes
+        upgrade: yes
       changed_when: False
   tags: pacman
 
