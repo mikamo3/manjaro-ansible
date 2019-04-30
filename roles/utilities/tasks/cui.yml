@@ -15,3 +15,6 @@
 - name: install fzf
   pacman:
     name: fzf
+- name: install powerline
+  pacman:
+    name: powerline

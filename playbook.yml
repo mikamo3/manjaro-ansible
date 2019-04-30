@@ -15,6 +15,7 @@
     - { role: dns, tags: ['dns'] }
     - { role: passwordmanager, tags: ['passwordmanager'] }
     - { role: cloudstorage, tags: ['cloudstorage'] }
+    - { role: dotfiles, tags: ['dotfiles'] }
 
   vars_prompt:
     - name: user_password
