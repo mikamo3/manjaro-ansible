@@ -4,3 +4,6 @@
 [submodule "library/ansible-makepkg"]
 	path = library/ansible-makepkg
 	url = git@github.com:mikamo3/ansible-makepkg.git
+[submodule ".devcontainer"]
+	path = .devcontainer
+	url = git@github.com:mikamo3/vscode-remote-template-ansible.git
