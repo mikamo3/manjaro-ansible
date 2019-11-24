@@ -1,0 +1,8 @@
+---
+- name: install ntp
+  pacman:
+    name: ntp
+- name: enable ntp
+  service:
+    name: ntpd.service
+    enabled: yes

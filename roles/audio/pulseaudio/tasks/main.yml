@@ -1,0 +1,4 @@
+---
+- name: install pulse audio
+  pacman:
+    name: pulseaudio,pavucontrol
