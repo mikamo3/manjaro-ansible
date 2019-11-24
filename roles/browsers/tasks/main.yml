@@ -1,6 +1,0 @@
----
-- name: install chromium
-  pacman:
-    name:
-      - chromium
-      - pepper-flash

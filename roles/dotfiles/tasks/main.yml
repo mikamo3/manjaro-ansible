@@ -1,6 +1,0 @@
----
-- name: install kawazu
-  become: yes
-  become_user: '{{ user.name }}'
-  makepkg:
-    name: mikamo3/kawazu-git

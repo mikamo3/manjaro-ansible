@@ -1,6 +1,0 @@
----
-- name: install vscode
-  become: yes
-  become_user: '{{ user.name }}'
-  aur:
-    name: visual-studio-code-bin

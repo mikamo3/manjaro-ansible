@@ -1,4 +1,0 @@
----
-- name: install base packages
-  pacman:
-    name: base,base-devel,git

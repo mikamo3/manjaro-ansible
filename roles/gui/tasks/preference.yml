@@ -1,7 +1,0 @@
----
-- name: install numlockx
-  pacman:
-    name: numlockx
-- name: install dunst
-  pacman:
-    name: dunst

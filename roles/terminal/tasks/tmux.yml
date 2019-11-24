@@ -1,4 +1,0 @@
----
-- name: install tmux
-  pacman:
-    name: tmux
