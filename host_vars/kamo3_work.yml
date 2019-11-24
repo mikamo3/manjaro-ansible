@@ -34,3 +34,6 @@ gui:
     greeter:
       use:
         - lightdm-webkit-theme-litarvan
+  windowmanager:
+    use:
+      - i3-gaps
