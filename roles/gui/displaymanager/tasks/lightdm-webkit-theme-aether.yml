@@ -1,0 +1,21 @@
+--- 
+- name: lightdm webkit theme litarvan
+  block:
+    - name: install lightdm-webkit-theme-litarvan
+      become: yes
+      become_user: '{{ user.name }}'
+      aur:
+        name: lightdm-webkit-theme-litarvan
+    - name: configure lightdm.conf
+      lineinfile: 
+        path: /etc/lightdm/lightdm.conf
+        regexp: '^\s*greeter-session=.*'
+        line: 'greeter-session=lightdm-webkit2-greeter'
+        insertafter: '\[Seat:\*\]'
+    - name: configure lightdm-webkit.conf
+      lineinfile: 
+        path: /etc/lightdm/lightdm-webkit2-greeter.conf
+        regexp: '^\s*webkit_theme\s*=\s*.*'
+        line: 'webkit_theme=litarvan'
+        insertafter: '\[greeter]'
+  when: '"lightdm-webkit-theme-litarvan" in gui.displaymanager.greeter.use'

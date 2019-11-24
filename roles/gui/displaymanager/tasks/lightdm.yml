@@ -1,0 +1,11 @@
+---
+- name: lightdm
+  block:
+    - name: install lightdm
+      pacman:
+        name: lightdm
+    - name: enable lightdm
+      service:
+        name: lightdm.service
+        enabled: yes
+  when: '"lightdm" in gui.displaymanager.use'

@@ -9,3 +9,4 @@
     - { role: packagemanager/yay, tags: ["yay"] }
     - { role: cui/shell, tags: ["shell"] }
     - { role: gui/displayserver, tags: ["gui","displayserver"] }
+    - { role: gui/displaymanager, tags: ["gui","displaymanager"] }

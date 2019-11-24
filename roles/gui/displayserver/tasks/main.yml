@@ -1,3 +1,2 @@
 ---
   - include: xorg.yml
-    when: '"xorg" in gui.displayserver.use'

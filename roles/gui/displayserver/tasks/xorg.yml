@@ -2,3 +2,4 @@
 - name: install xorg
   pacman:
     name: xf86-video-vesa,xf86-video-fbdev,mesa,xorg-server,xorg-apps,xorg-xinit,xorg-twm,xorg-xclock,xterm
+  when: '"xorg" in gui.displayserver.use'

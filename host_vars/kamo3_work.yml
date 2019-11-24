@@ -28,3 +28,9 @@ gui:
   displayserver:
     use:
       - xorg
+  displaymanager:
+    use:
+      - lightdm
+    greeter:
+      use:
+        - lightdm-webkit-theme-litarvan
