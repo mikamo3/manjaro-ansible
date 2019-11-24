@@ -6,3 +6,4 @@
   roles:
     - { role: debug, tags: ["never", "debug"] }
     - { role: init, tags: ["never", "init"] }
+    - { role: packagemanager/yay, tags: ["yay"] }
