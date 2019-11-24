@@ -1,0 +1,4 @@
+---
+- name: install zsh
+  pacman:
+    name: zsh,zsh-completions
