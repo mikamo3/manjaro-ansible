@@ -3,7 +3,6 @@ kernel:
   version: 53
   ucode: intel
 
-
 hostname: kamo3_work
 bootloader:
   loader:
@@ -25,3 +24,7 @@ bootloader:
         - /initramfs-5.3-x86_64-fallback.img
       options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
 
+gui:
+  displayserver:
+    use:
+      - xorg
