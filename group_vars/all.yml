@@ -1,0 +1,35 @@
+---
+user:
+  uid: 1000
+  name: mikamo
+  shell: /usr/bin/zsh
+timezone: Asia/Tokyo
+
+locale:
+  uselocales:
+    - "en_US.UTF-8 UTF-8"
+    - "ja_JP.UTF-8 UTF-8"
+  locale: jp
+  lang: ja_JP.UTF-8
+  keymap: jp106
+
+aur:
+  helper: yay
+
+xorg:
+  driver: virtualbox
+
+dns:
+  dnscrypt:
+    port: 15353
+    servers:
+      - cloudflare
+      - google
+    forwards:
+      - name: mikamosrv.org
+        ip: 192.168.100.40
+  dnsmasq:
+    host: 127.0.0.1
+    upstream:
+      host: 127.0.0.1
+      port: 15353

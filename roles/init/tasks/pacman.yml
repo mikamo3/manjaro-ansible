@@ -1,0 +1,11 @@
+---
+- name: pacman
+  block:
+    - name: select mirror list
+      command: pacman-mirrors -c Japan
+      changed_when: False
+
+    - name: update pacman cache
+      pacman:
+        update_cache: yes
+      changed_when: False

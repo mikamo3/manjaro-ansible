@@ -1,0 +1,27 @@
+---
+kernel:
+  version: 53
+  ucode: intel
+
+
+hostname: kamo3_work
+bootloader:
+  loader:
+    default: manjaro
+  entries:
+    - title: manjaro
+      filename: manjaro.conf
+      linux: /vmlinuz-5.3-x86_64
+      initrds:
+        - /{{kernel.ucode}}-ucode.img
+        - /initramfs-5.3-x86_64.img
+      options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
+
+    - title: manjaro (fallback)
+      filename: manjaro_fallback.conf
+      linux: /vmlinuz-5.3-x86_64
+      initrds:
+        - /{{kernel.ucode}}-ucode.img
+        - /initramfs-5.3-x86_64-fallback.img
+      options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
+

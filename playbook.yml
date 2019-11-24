@@ -1,27 +1,8 @@
 ---
-- hosts: localhost
+- hosts: kamo3_work
   remote_user: root
-  roles:
-    - { role: base, tags: ['base'] }
-    - { role: fonts, tags: ['fonts'] }
-    - { role: gui, tags: ['gui'] }
-    - { role: terminal, tags: ['terminal'] }
-    - { role: input, tags: ['input'] }
-    - { role: keyring, tags: ['keyring'] }
-    - { role: sound, tags: ['sound'] }
-    - { role: browsers, tags: ['browsers'] }
-    - { role: editors, tags: ['editors'] }
-    - { role: utilities, tags: ['utilities'] }
-    - { role: dns, tags: ['dns'] }
-    - { role: passwordmanager, tags: ['passwordmanager'] }
-    - { role: cloudstorage, tags: ['cloudstorage'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
+  gather_facts: no
 
-  vars_prompt:
-    - name: user_password
-      prompt: input user password
-      private: yes
-      confirm: yes
-    - name: user_github_token
-      prompt: input github token (for regist pubkey)
-      private: yes
+  roles:
+    - { role: debug, tags: ["never", "debug"] }
+    - { role: init, tags: ["never", "init"] }

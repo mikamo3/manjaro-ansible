@@ -1,0 +1,43 @@
+---
+- name: input user password
+  block:
+    - name: input user password
+      pause:
+        prompt: input password for user
+        echo: no
+      register: user_password
+    - name: set password fact
+      set_fact:
+        user_password: "{{ user_password.user_input }}"
+        run_once: true
+
+- name: set root password
+  user:
+    name: root
+    password: "{{ user_password | password_hash('sha512') }}"
+  when: user_password | length > 0
+
+- name: user config
+  block:
+    - name: add user
+      user:
+        name: "{{ user.name }}"
+        append: yes
+        groups:
+          - wheel
+        uid: "{{ user.uid }}"
+        shell: "{{ user.shell }}"
+        password: "{{ user_password | password_hash('sha512') }}"
+        generate_ssh_key: yes
+        ssh_key_bits: 521
+        ssh_key_type: ecdsa
+        ssh_key_file: .ssh/id_ecdsa
+        ssh_key_passphrase: "{{ user_password | password_hash('sha512') }}"
+    - name: set sudo config
+      template:
+        src: sudoers.j2
+        dest: /etc/sudoers
+        mode: "440"
+        owner: root
+        group: root
+  when: user_password | length > 0
