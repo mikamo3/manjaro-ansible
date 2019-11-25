@@ -3,4 +3,4 @@
 	url = https://github.com/kewlfft/ansible-aur.git
 [submodule ".devcontainer"]
 	path = .devcontainer
-	url = git@github.com:mikamo3/vscode-remote-template-ansible.git
+	url = https://github.com/mikamo3/vscode-remote-template-ansible.git
