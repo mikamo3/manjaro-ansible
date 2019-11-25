@@ -37,19 +37,3 @@ gui:
   windowmanager:
     use:
       - i3-gaps
-  
-network:
-  dns:
-    dnscrypt:
-      port: 15353
-      servers:
-        - cloudflare
-        - google
-      forwards:
-        - name: mikamosrv.org
-          ip: 192.168.100.40
-    dnsmasq:
-      host: 127.0.0.1
-      upstream:
-        host: 127.0.0.1
-        port: 15353
