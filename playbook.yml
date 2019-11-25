@@ -24,3 +24,4 @@
     - { role: development/docker, tags: ["development", "docker"] }
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
+    - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
