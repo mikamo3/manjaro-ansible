@@ -1,0 +1,13 @@
+---
+- name: install dnsmasq
+  pacman:
+    name: dnsmasq
+- name: configure dnsmasq
+  template:
+    src: dnsmasq.conf.j2
+    dest: /etc/dnsmasq.conf
+    mode: '0644'
+- name: enable dnsmasq
+  service:
+    name: dnsmasq.service
+    enabled: yes
