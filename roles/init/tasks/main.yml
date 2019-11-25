@@ -5,12 +5,12 @@
   tags: locale
 - include: hostname.yml
   tags: hostname
-- include: user.yml
-  tags: user
 - include: pacman.yml
   tags: pacman
 - include: basepackages.yml
   tags: basepackages
+- include: user.yml
+  tags: user
 - include: network.yml
   tags: network
 - include: initramfs.yml
