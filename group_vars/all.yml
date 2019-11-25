@@ -9,9 +9,8 @@ locale:
   uselocales:
     - "en_US.UTF-8 UTF-8"
     - "ja_JP.UTF-8 UTF-8"
-  locale: jp
+  languagecode: ja
   lang: ja_JP.UTF-8
-  keymap: jp106
 
 network:
   dns:

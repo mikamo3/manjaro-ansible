@@ -4,6 +4,7 @@ kernel:
   ucode: intel
 
 hostname: kamo3_work
+
 bootloader:
   loader:
     default: manjaro
@@ -23,6 +24,10 @@ bootloader:
         - /{{kernel.ucode}}-ucode.img
         - /initramfs-5.3-x86_64-fallback.img
       options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
+
+keyboard:
+  layout: jp
+  keymap: jp106
 
 gui:
   displayserver:
