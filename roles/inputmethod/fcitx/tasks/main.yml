@@ -1,0 +1,20 @@
+---
+- name: fcitx
+  block:
+    - name: install fcitx
+      pacman:
+        name:
+          - fcitx
+          - fcitx-configtool
+          - fcitx-gtk2
+          - fcitx-gtk3
+          - fcitx-mozc
+          - fcitx-qt5
+    - name: configure xprofile
+      copy:
+        src: 60-export-fcitx-config.sh
+        dest: /etc/X11/xinit/xinitrc.d/60-export-fcitx-config.sh
+        mode: "0755"
+
+  tags:
+    - fcitx

@@ -12,6 +12,7 @@
     - { role: gui/displaymanager, tags: ["gui", "displaymanager"] }
     - { role: gui/windowmanager, tags: ["gui", "windowmanager"] }
     - { role: gui/fonts, tags: ["gui", "fonts"] }
+    - { role: inputmethod/fcitx, tags: ["inputmethod", "fcitx"] }
     - { role: audio/pulseaudio, tags: ["audio", "pulseaudio"] }
     - { role: network/ntp, tags: ["network", "ntp"] }
     - {
