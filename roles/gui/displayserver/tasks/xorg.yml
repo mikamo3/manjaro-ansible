@@ -1,5 +1,12 @@
 ---
-- name: install xorg
-  pacman:
-    name: xf86-video-vesa,xf86-video-fbdev,mesa,xorg-server,xorg-apps,xorg-xinit,xorg-twm,xorg-xclock,xterm
+- name: xorg
+  block:
+    - name: install xorg
+      pacman:
+        name: xf86-video-vesa,xf86-video-fbdev,mesa,xorg-server,xorg-apps,xorg-xinit,xorg-twm,xorg-xclock,xterm
+    - name: config keymap
+      template:
+        src: 00-keyboard.conf.j2
+        dest: /etc/X11/xorg.conf.d/00-keyboard.conf
+        mode: "0644"
   when: '"xorg" in gui.displayserver.use'
