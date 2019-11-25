@@ -11,6 +11,7 @@
     - { role: gui/displayserver, tags: ["gui", "displayserver"] }
     - { role: gui/displaymanager, tags: ["gui", "displaymanager"] }
     - { role: gui/windowmanager, tags: ["gui", "windowmanager"] }
+    - { role: gui/fonts, tags: ["gui", "fonts"] }
     - { role: audio/pulseaudio, tags: ["audio", "pulseaudio"] }
     - { role: network/ntp, tags: ["network", "ntp"] }
     - {
