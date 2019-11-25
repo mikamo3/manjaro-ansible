@@ -1,0 +1,13 @@
+---
+- name: install docker
+  pacman:
+    name: docker,docker-compose
+- name: enable docker
+  service:
+    name: docker.service
+    enabled: yes
+- name: add {{ user.name }} to group docker
+  user:
+    name: "{{ user.name }}"
+    groups: docker
+    append: yes

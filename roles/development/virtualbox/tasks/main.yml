@@ -1,0 +1,4 @@
+---
+- name: install virtualbox
+  pacman:
+    name: virtualbox,virtualbox-host-dkms
