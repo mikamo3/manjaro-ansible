@@ -1,1 +1,0 @@
-ANSIBLE_CONFIG=./ansible.cfg ansible-playbook -i hosts.yml playbook.yml --tags=init
