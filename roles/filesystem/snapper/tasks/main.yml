@@ -1,0 +1,8 @@
+---
+- name: install snapper
+  pacman:
+    name: snapper
+  register: snapper_installed
+- name: configure root
+  command: snapper -c snap_root create-config -f btrfs /
+  when: snapper_installed is changed

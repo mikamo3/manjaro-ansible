@@ -1,6 +1,7 @@
 ---
 - hosts: kamo3_work
-  remote_user: root
+  remote_user: "{{user.name}}"
+  become: true
   gather_facts: no
 
   roles:
@@ -15,13 +16,11 @@
     - { role: inputmethod/fcitx, tags: ["inputmethod", "fcitx"] }
     - { role: audio/pulseaudio, tags: ["audio", "pulseaudio"] }
     - { role: network/ntp, tags: ["network", "ntp"] }
-    - {
-        role: "network/dnscrypt-proxy",
-        tags: ["network", "dns", "dnscrypt-proxy"],
-      }
-    - { role: network/dnsmasq, tags: ["network", "dns", "dnsmasq"] }
     - { role: development/vscode, tags: ["development", "vscode"] }
     - { role: development/docker, tags: ["development", "docker"] }
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
     - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
+    - { role: filesystem/snapper, tags: ["filesystem", "snapper"] }
+    - { role: security/keepassxc, tags: ["security", "keepassxc"] }
+    - { role: security/authy, tags: ["security", "authy"] }
