@@ -9,6 +9,7 @@
     - { role: init, tags: ["never", "init"] }
     - { role: packagemanager/yay, tags: ["yay"] }
     - { role: cui/shell, tags: ["shell"] }
+    - { role: texteditor/neovim, tags: ["texteditor", "neovim"] }
     - { role: gui/displayserver, tags: ["gui", "displayserver"] }
     - { role: gui/displaymanager, tags: ["gui", "displaymanager"] }
     - { role: gui/windowmanager, tags: ["gui", "windowmanager"] }
@@ -19,8 +20,12 @@
     - { role: development/vscode, tags: ["development", "vscode"] }
     - { role: development/docker, tags: ["development", "docker"] }
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
+    - { role: development/git, tags: ["development", "git"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
     - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
-    - { role: filesystem/snapper, tags: ["filesystem", "snapper","excludeChroot"] }
+    - {
+        role: filesystem/snapper,
+        tags: ["filesystem", "snapper", "excludeChroot"],
+      }
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
