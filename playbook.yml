@@ -21,6 +21,6 @@
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
     - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
-    - { role: filesystem/snapper, tags: ["filesystem", "snapper"] }
+    - { role: filesystem/snapper, tags: ["filesystem", "snapper","excludeChroot"] }
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
