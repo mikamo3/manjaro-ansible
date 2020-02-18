@@ -2,3 +2,8 @@
 - name: install zsh
   pacman:
     name: zsh,zsh-completions
+- name: install zplug
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: zplug
