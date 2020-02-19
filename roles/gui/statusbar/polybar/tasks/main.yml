@@ -1,0 +1,4 @@
+---
+- name: install polybar
+  pacman:
+    name: polybar

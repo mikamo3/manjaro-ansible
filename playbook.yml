@@ -29,3 +29,6 @@
       }
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
+    - { role: gui/compositmanager/compton, tags: ["compositmanager", "compton"] }
+    - { role: launcher/rofi, tags: ["launcher", "rofi"] }
+    - { role: statusbar/polybar, tags: ["statusbar", "polybar"] }
