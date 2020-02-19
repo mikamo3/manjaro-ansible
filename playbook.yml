@@ -22,6 +22,7 @@
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
     - { role: development/git, tags: ["development", "git"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
+    - { role: internet/chromium, tags: ["internet", "chromium"] }
     - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
     - {
         role: filesystem/snapper,
@@ -33,4 +34,3 @@
     - { role: gui/launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: gui/statusbar/polybar, tags: ["statusbar", "polybar"] }
     - { role: terminal/tmux, tags: ["terminal", "tmux"] }
-    - { role: internet/chromium, tags: ["internet", "chromium"] }
