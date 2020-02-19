@@ -1,0 +1,4 @@
+---
+- name: fzf
+  pacman:
+    name: fzf
