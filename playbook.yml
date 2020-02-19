@@ -33,3 +33,4 @@
     - { role: gui/launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: gui/statusbar/polybar, tags: ["statusbar", "polybar"] }
     - { role: terminal/tmux, tags: ["terminal", "tmux"] }
+    - { role: internet/chromium, tags: ["internet", "chromium"] }
