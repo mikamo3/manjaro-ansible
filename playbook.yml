@@ -32,3 +32,4 @@
     - { role: gui/compositmanager/compton, tags: ["compositmanager", "compton"] }
     - { role: launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: statusbar/polybar, tags: ["statusbar", "polybar"] }
+    - { role: terminal/tmux, tags: ["terminal", "tmux"] }
