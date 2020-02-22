@@ -30,9 +30,13 @@
       }
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
-    - { role: gui/compositmanager/compton, tags: ["compositmanager", "compton"] }
+    - {
+        role: gui/compositmanager/compton,
+        tags: ["compositmanager", "compton"],
+      }
     - { role: gui/launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: gui/statusbar/polybar, tags: ["statusbar", "polybar"] }
     - { role: terminal/tmux, tags: ["terminal", "tmux"] }
     - { role: cui/fzf, tags: ["cui", "fzf"] }
     - { role: cui/powerline, tags: ["cui", "powerline"] }
+    - { role: security/gnome-keyring, tags: ["security", "gnome-keyring"] }
