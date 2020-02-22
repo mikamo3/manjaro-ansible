@@ -1,4 +1,11 @@
 ---
 - name: install base packages
   pacman:
-    name: base,base-devel,linux{{ kernel.version }},linux{{ kernel.version }}-headers,btrfs-progs,{{ kernel.ucode }}-ucode,openssh
+    name: 
+      - base
+      - base-devel
+      - linux{{ kernel.version.majour }}{{ kernel.version.minor}}
+      - linux{{ kernel.version.majour }}{{ kernel.version.minor}}-headers
+      - btrfs-progs
+      - "{{ kernel.ucode }}-ucode"
+      - openssh

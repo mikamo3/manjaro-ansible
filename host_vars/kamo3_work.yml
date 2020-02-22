@@ -1,6 +1,8 @@
 ---
 kernel:
-  version: 53
+  version: 
+    majour: 5
+    minor: 5
   ucode: intel
 
 hostname: kamo3_work
@@ -11,18 +13,18 @@ bootloader:
   entries:
     - title: manjaro
       filename: manjaro.conf
-      linux: /vmlinuz-5.3-x86_64
+      linux: /vmlinuz-{{kernel.version.majour}}.{{kernel.version.minor}}-x86_64
       initrds:
         - /{{kernel.ucode}}-ucode.img
-        - /initramfs-5.3-x86_64.img
+        - /initramfs-{{kernel.version.majour}}.{{kernel.version.minor}}-x86_64.img
       options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
 
     - title: manjaro (fallback)
       filename: manjaro_fallback.conf
-      linux: /vmlinuz-5.3-x86_64
+      linux: /vmlinuz-{{kernel.version.majour}}.{{kernel.version.minor}}-x86_64
       initrds:
         - /{{kernel.ucode}}-ucode.img
-        - /initramfs-5.3-x86_64-fallback.img
+        - /initramfs-{{kernel.version.majour}}.{{kernel.version.minor}}-x86_64-fallback.img
       options: root=PARTLABEL=manjaro rootflags=subvol=@ rw
 
 keyboard:
