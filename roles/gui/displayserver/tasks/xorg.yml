@@ -1,6 +1,25 @@
 ---
 - name: xorg
   block:
+    - name: install video driver (virtualbox)
+      pacman:
+        name: xf86-video-vesa,xf86-video-fbdev
+      when: xorg.driver == "virtualbox"
+
+    - name: install video driver (amdgpu)
+      pacman:
+        name: xf86-video-amdgpu
+      when: xorg.driver == "amd"
+
+    - name: install video driver (intel)
+      pacman:
+        name: xf86-video-intel
+      when: xorg.driver == "intel"
+
+    - name: install video driver (nvidia)
+      pacman:
+        name: xf86-video-nouveau
+      when: xorg.driver == "nvidia"
     - name: install xorg
       pacman:
         name: xf86-video-vesa,xf86-video-fbdev,mesa,xorg-server,xorg-apps,xorg-xinit,xorg-twm,xorg-xclock,xterm
