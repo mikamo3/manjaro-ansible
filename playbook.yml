@@ -40,3 +40,5 @@
     - { role: cui/fzf, tags: ["cui", "fzf"] }
     - { role: cui/powerline, tags: ["cui", "powerline"] }
     - { role: security/gnome-keyring, tags: ["security", "gnome-keyring"] }
+    - { role: filesystem/dropbox, tags: ["filesystem", "dropbox"] }
+    - { role: filesystem/grive, tags: ["filesystem", "grive"] }
