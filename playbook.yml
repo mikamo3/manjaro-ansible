@@ -41,4 +41,4 @@
     - { role: cui/powerline, tags: ["cui", "powerline"] }
     - { role: security/gnome-keyring, tags: ["security", "gnome-keyring"] }
     - { role: filesystem/dropbox, tags: ["filesystem", "dropbox"] }
-    - { role: filesystem/grive, tags: ["filesystem", "grive"] }
+    - { role: filesystem/google-drive-ocamlfuse, tags: ["filesystem", "google-drive-ocamlfuse"] }

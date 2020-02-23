@@ -1,5 +1,0 @@
-- name: install grive
-  become: yes
-  become_user: "{{ user.name }}"
-  aur:
-    name: grive
