@@ -31,8 +31,8 @@
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
     - {
-        role: gui/compositmanager/compton,
-        tags: ["compositmanager", "compton"],
+        role: gui/compositmanager/picom,
+        tags: ["compositmanager", "picom"],
       }
     - { role: gui/launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: gui/statusbar/polybar, tags: ["statusbar", "polybar"] }
