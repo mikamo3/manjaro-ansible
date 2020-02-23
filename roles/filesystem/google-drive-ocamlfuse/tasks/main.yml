@@ -1,0 +1,5 @@
+- name: install google-drive-ocamlfuse
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: google-drive-ocamlfuse
