@@ -2,7 +2,7 @@
 kernel:
   version: 
     majour: 5
-    minor: 5
+    minor: 4
   ucode: intel
 
 hostname: kamo3_work
