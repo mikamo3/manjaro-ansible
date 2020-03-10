@@ -3,7 +3,10 @@
   remote_user: "{{user.name}}"
   become: true
   gather_facts: no
-
+  vars_files:
+    - vars/kamo3_work/{{ stage }}.yml
+    - vars/kamo3_work/common.yml
+    - vars/common.yml
   roles:
     - { role: debug, tags: ["never", "debug"] }
     - { role: init, tags: ["never", "init"] }

@@ -44,6 +44,3 @@ gui:
   windowmanager:
     use:
       - i3-gaps
-
-xorg:
-  driver: nvidia

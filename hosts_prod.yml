@@ -4,3 +4,5 @@ all:
       hosts:
         kamo3_work:
           ansible_connection: local
+  vars:
+    stage: production
