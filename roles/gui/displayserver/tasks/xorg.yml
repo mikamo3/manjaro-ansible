@@ -23,6 +23,10 @@
     - name: install xorg
       pacman:
         name: xf86-video-vesa,xf86-video-fbdev,mesa,xorg-server,xorg-apps,xorg-xinit,xorg-twm,xorg-xclock,xterm
+    - name: configure xorg.conf.d
+      copy:
+        src: "{{hostname}}_{{stage}}.conf"
+        dest: /etc/X11/xorg.conf.d/10-multidisplay.conf
     - name: config keymap
       template:
         src: 00-keyboard.conf.j2
