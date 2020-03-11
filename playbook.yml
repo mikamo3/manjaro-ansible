@@ -46,3 +46,6 @@
         tags: ["filesystem", "google-drive-ocamlfuse"],
       }
     - { role: video/vlc, tags: ["video", "vlc"] }
+    - { role: system, tags: ["system"] }
+    - { role: boostnote, tags: ["boostnote"] }
+    - { role: qbittorrent, tags: ["qbittorrent"] }
