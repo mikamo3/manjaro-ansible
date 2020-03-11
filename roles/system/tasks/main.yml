@@ -1,0 +1,10 @@
+---
+- name: install system requirements
+  pacman:
+    name: 
+      - ntfs-3g
+- name: install utils
+  pacman:
+    name:
+      - usbutils
+      - mhwd

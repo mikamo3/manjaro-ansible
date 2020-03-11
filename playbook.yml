@@ -33,10 +33,7 @@
       }
     - { role: security/keepassxc, tags: ["security", "keepassxc"] }
     - { role: security/authy, tags: ["security", "authy"] }
-    - {
-        role: gui/compositmanager/picom,
-        tags: ["compositmanager", "picom"],
-      }
+    - { role: gui/compositmanager/picom, tags: ["compositmanager", "picom"] }
     - { role: gui/launcher/rofi, tags: ["launcher", "rofi"] }
     - { role: gui/statusbar/polybar, tags: ["statusbar", "polybar"] }
     - { role: terminal/tmux, tags: ["terminal", "tmux"] }
@@ -44,4 +41,11 @@
     - { role: cui/powerline, tags: ["cui", "powerline"] }
     - { role: security/gnome-keyring, tags: ["security", "gnome-keyring"] }
     - { role: filesystem/dropbox, tags: ["filesystem", "dropbox"] }
-    - { role: filesystem/google-drive-ocamlfuse, tags: ["filesystem", "google-drive-ocamlfuse"] }
+    - {
+        role: filesystem/google-drive-ocamlfuse,
+        tags: ["filesystem", "google-drive-ocamlfuse"],
+      }
+    - { role: video/vlc, tags: ["video", "vlc"] }
+    - { role: system, tags: ["system"] }
+    - { role: boostnote, tags: ["boostnote"] }
+    - { role: qbittorrent, tags: ["qbittorrent"] }

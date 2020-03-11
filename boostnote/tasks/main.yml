@@ -1,0 +1,5 @@
+- name: install boostnote
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: boostnote
