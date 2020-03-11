@@ -50,3 +50,4 @@
     - { role: boostnote, tags: ["boostnote"] }
     - { role: qbittorrent, tags: ["qbittorrent"] }
     - { role: printer, tags: ["printer"] }
+    - { role: pdf/okular, tags: ["pdf","okular"] }
