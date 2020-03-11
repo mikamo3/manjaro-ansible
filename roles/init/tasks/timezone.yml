@@ -4,5 +4,11 @@
     src: /usr/share/zoneinfo/{{ timezone }}
     dest: /etc/localtime
     state: link
-- name: adjust hwclock
+
+- name: adjust hwclock local
+  shell: hwclock -D --systohc --localtime 
+  when: hwclock == "local"
+
+- name: adjust hwclock utc
   shell: hwclock --systohc --utc
+  when: hwclock != "local"

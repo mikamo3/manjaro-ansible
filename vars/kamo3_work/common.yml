@@ -7,6 +7,7 @@ kernel:
 
 hostname: kamo3_work
 
+hwclock: local
 bootloader:
   loader:
     default: manjaro
