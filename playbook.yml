@@ -49,3 +49,4 @@
     - { role: system, tags: ["system"] }
     - { role: boostnote, tags: ["boostnote"] }
     - { role: qbittorrent, tags: ["qbittorrent"] }
+    - { role: printer, tags: ["printer"] }
