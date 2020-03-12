@@ -1,0 +1,7 @@
+---
+- name: install
+  pacman:
+    name: 
+      - thunar
+      - thunar-volman
+      - gvfs
