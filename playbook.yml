@@ -27,6 +27,7 @@
     - { role: development/git, tags: ["development", "git"] }
     - { role: internet/firefox, tags: ["internet", "firefox"] }
     - { role: internet/chromium, tags: ["internet", "chromium"] }
+    - { role: internet/googlechrome, tags: ["internet", "googlechrome"] }
     - { role: terminal/alacritty, tags: ["terminal", "alacritty"] }
     - {
         role: filesystem/snapper,

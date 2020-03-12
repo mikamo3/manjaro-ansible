@@ -1,0 +1,5 @@
+- name: install google-chrome
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: google-chrome
