@@ -12,6 +12,7 @@
     - { role: init, tags: ["never", "init"] }
     - { role: packagemanager/yay, tags: ["yay"] }
     - { role: cui/shell, tags: ["shell"] }
+    - { role: cui/utils, tags: ["cui","utils"] }
     - { role: texteditor/neovim, tags: ["texteditor", "neovim"] }
     - { role: gui/displayserver, tags: ["gui", "displayserver"] }
     - { role: gui/displaymanager, tags: ["gui", "displaymanager"] }

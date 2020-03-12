@@ -1,0 +1,16 @@
+---
+- name: install utils (pacman)
+  pacman:
+    name: 
+      - bat
+      - htop
+      - exa
+      - ripgrep
+      - neofetch
+      - unarchiver
+      - xsel
+- name: install (aur)
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: procs
