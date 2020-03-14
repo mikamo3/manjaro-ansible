@@ -54,3 +54,6 @@
     - { role: printer, tags: ["printer"] }
     - { role: filemanager/thunar, tags: ["filemanager", "thunar"] }
     - { role: pdf/okular, tags: ["pdf", "okular"] }
+    - { role: archiver/unarchiver, tags: ["archiver", "unarchiver"] }
+    - { role: archiver/common, tags: ["archiver", "common"] }
+    - { role: archiver/xarchiver, tags: ["archiver", "xarchiver"] }

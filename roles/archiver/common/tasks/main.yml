@@ -1,0 +1,9 @@
+---
+- name: install
+  pacman:
+    name: 
+      - unrar
+      - unzip
+      - p7zip
+      - lha
+      - xz
