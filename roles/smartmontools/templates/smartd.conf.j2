@@ -1,0 +1,4 @@
+DEVICESCAN
+{% for device in smartmontools%}
+{{device.device}} {{device.option}} -M exec /usr/local/bin/smartdnotify
+{% endfor %}

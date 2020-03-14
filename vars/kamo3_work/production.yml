@@ -9,3 +9,11 @@ fstab:
     options: "defaults,uid=1000,gid=1000,dmask=022,fmask=033,x-systemd.device-timeout=1"
     dump: 0
     pass: 0
+
+smartmontools:
+  - device: /dev/nvme0n1
+    option: "-a -o on -S on"
+  - device: /dev/sda
+    option: "-a -o on -S on"
+  - device: /dev/sdb
+    option: "-a -d sat -o on -S on"

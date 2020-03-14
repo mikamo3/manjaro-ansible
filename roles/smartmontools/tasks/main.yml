@@ -1,0 +1,21 @@
+---
+- name: install
+  pacman:
+    name: smartmontools
+
+- name: configure
+  template:
+    src: smartd.conf.j2
+    dest: /etc/smartd.conf
+    mode: "0644"
+
+- name: script
+  template:
+    src: smartdnotify.j2
+    dest: /usr/local/bin/smartdnotify
+    mode: "0755"
+
+- name: enable
+  service:
+    name: smartd
+    enabled: yes
