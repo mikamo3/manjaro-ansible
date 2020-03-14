@@ -1,0 +1,11 @@
+---
+- name: install
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: systemd-numlockontty
+
+- name: enable
+  service:
+    name: numLockOnTty.service
+    enabled: yes

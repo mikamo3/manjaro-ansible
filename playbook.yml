@@ -58,3 +58,4 @@
     - { role: archiver/xarchiver, tags: ["archiver", "xarchiver"] }
     - { role: remmina, tags: ["remmina"] }
     - { role: timesyncd, tags: ["timesyncd"] }
+    - { role: numlockontty, tags: ["numlockontty"] }
