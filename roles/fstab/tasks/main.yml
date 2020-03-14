@@ -1,0 +1,16 @@
+---
+- name: mkdir
+  file:
+    path: "{{item.dir}}"
+    state: directory
+    mode: "0755"
+  with_items: 
+    - "{{fstab}}"
+
+- name: append
+  lineinfile:
+    path: /etc/fstab
+    regexp: "^UUID={{item.uuid}}"
+    line: "UUID={{item.uuid}} {{item.dir}} {{item.type}} {{item.options}} {{item.dump}} {{item.pass}}"
+  with_items: 
+    - "{{fstab}}"

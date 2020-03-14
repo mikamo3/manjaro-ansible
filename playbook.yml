@@ -64,3 +64,4 @@
     - { role: catfish, tags: ["catfish"]}
     - { role: gparted, tags: ["gparted"]}
     - { role: internet/profileSyncDaemon, tags: ["profileSyncDaemon"]}
+    - { role: fstab, tags: ["fstab"]}

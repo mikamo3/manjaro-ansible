@@ -1,3 +1,11 @@
 ---
 xorg:
   driver: nvidia
+
+fstab:
+  - uuid: "5A3A9EA43A9E7CA7"
+    dir: "/mnt/usbhdd"
+    type: "ntfs-3g"
+    options: "defaults,uid=1000,gid=1000,dmask=022,fmask=033,x-systemd.device-timeout=1"
+    dump: 0
+    pass: 0
