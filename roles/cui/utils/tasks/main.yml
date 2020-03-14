@@ -9,6 +9,9 @@
       - neofetch
       - unarchiver
       - xsel
+      - aria2
+      - pkgfile
+
 - name: install (aur)
   become: yes
   become_user: "{{ user.name }}"
