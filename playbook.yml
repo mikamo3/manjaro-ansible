@@ -65,3 +65,4 @@
     - { role: gparted, tags: ["gparted"]}
     - { role: internet/profileSyncDaemon, tags: ["profileSyncDaemon"]}
     - { role: fstab, tags: ["fstab"]}
+    - { role: firejail, tags: ["firejail"]}
