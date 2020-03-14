@@ -61,4 +61,6 @@
     - { role: numlockontty, tags: ["numlockontty"] }
     - { role: libreoffice, tags: ["libreoffice"]}
     - { role: feh, tags: ["feh"]}
+    - { role: catfish, tags: ["catfish"]}
+    - { role: gparted, tags: ["gparted"]}
     - { role: internet/profileSyncDaemon, tags: ["profileSyncDaemon"]}
