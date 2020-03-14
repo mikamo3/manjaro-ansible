@@ -66,3 +66,4 @@
     - { role: internet/profileSyncDaemon, tags: ["profileSyncDaemon"]}
     - { role: fstab, tags: ["fstab"]}
     - { role: firejail, tags: ["firejail"]}
+    - { role: linux_notification_center, tags: ["linux_notification_center"]}
