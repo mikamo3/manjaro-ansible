@@ -57,3 +57,4 @@
     - { role: archiver/unarchiver, tags: ["archiver", "unarchiver"] }
     - { role: archiver/common, tags: ["archiver", "common"] }
     - { role: archiver/xarchiver, tags: ["archiver", "xarchiver"] }
+    - { role: remmina, tags: ["remmina"] }
