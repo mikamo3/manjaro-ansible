@@ -1,0 +1,10 @@
+---
+- name: install (pacman)
+  pacman:
+    name: man
+
+- name: install (aur)
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: man-pages-ja
