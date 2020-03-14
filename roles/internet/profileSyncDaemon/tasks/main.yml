@@ -1,0 +1,6 @@
+---
+- name: install
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: profile-sync-daemon

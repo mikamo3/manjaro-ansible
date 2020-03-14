@@ -59,3 +59,6 @@
     - { role: remmina, tags: ["remmina"] }
     - { role: timesyncd, tags: ["timesyncd"] }
     - { role: numlockontty, tags: ["numlockontty"] }
+    - { role: libreoffice, tags: ["libreoffice"]}
+    - { role: feh, tags: ["feh"]}
+    - { role: internet/profileSyncDaemon, tags: ["profileSyncDaemon"]}
