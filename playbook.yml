@@ -20,7 +20,6 @@
     - { role: gui/fonts, tags: ["gui", "fonts"] }
     - { role: inputmethod/fcitx, tags: ["inputmethod", "fcitx"] }
     - { role: audio/pulseaudio, tags: ["audio", "pulseaudio"] }
-    - { role: network/ntp, tags: ["network", "ntp"] }
     - { role: development/vscode, tags: ["development", "vscode"] }
     - { role: development/docker, tags: ["development", "docker"] }
     - { role: development/virtualbox, tags: ["development", "virtualbox"] }
@@ -58,3 +57,4 @@
     - { role: archiver/common, tags: ["archiver", "common"] }
     - { role: archiver/xarchiver, tags: ["archiver", "xarchiver"] }
     - { role: remmina, tags: ["remmina"] }
+    - { role: timesyncd, tags: ["timesyncd"] }
