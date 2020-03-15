@@ -68,4 +68,5 @@
     - { role: firejail, tags: ["firejail"]}
     - { role: linux_notification_center, tags: ["linux_notification_center"]}
     - { role: man, tags: ["man"]}
+    - { role: slack, tags: ["slack"]}
     - { role: numlockx, tags: ["numlockx"]}
