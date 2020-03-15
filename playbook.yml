@@ -58,7 +58,6 @@
     - { role: archiver/xarchiver, tags: ["archiver", "xarchiver"] }
     - { role: remmina, tags: ["remmina"] }
     - { role: timesyncd, tags: ["timesyncd"] }
-    - { role: numlockontty, tags: ["numlockontty"] }
     - { role: libreoffice, tags: ["libreoffice"]}
     - { role: feh, tags: ["feh"]}
     - { role: catfish, tags: ["catfish"]}
@@ -69,3 +68,4 @@
     - { role: firejail, tags: ["firejail"]}
     - { role: linux_notification_center, tags: ["linux_notification_center"]}
     - { role: man, tags: ["man"]}
+    - { role: numlockx, tags: ["numlockx"]}
