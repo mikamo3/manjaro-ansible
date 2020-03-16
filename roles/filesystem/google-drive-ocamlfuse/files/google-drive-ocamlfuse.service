@@ -1,0 +1,11 @@
+[Unit]
+Description=google-drive-ocamlfuse
+After=local-fs.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/google-drive-ocamlfuse %h/googleDrive
+ExecStop=umount %h/googleDrive
+
+[Install]
+WantedBy=default.target

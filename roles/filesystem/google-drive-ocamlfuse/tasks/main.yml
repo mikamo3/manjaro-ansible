@@ -3,3 +3,8 @@
   become_user: "{{ user.name }}"
   aur:
     name: google-drive-ocamlfuse
+- name: configure  
+  copy:
+    src: google-drive-ocamlfuse.service
+    dest: /etc/systemd/user/google-drive-ocamlfuse.service
+    mode: '0644'
