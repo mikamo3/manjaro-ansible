@@ -70,3 +70,5 @@
     - { role: man, tags: ["man"]}
     - { role: slack, tags: ["slack"]}
     - { role: numlockx, tags: ["numlockx"]}
+    - { role: maim, tags: ["maim"]}
+    - { role: python, tags: ["python"]}
