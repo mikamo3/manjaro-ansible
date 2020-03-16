@@ -11,6 +11,7 @@
       - xsel
       - aria2
       - pkgfile
+      - xdg-user-dirs
 
 - name: install (aur)
   become: yes
