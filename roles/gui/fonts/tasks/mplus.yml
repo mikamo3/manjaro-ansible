@@ -1,0 +1,5 @@
+- name: install mplus
+  become: yes
+  become_user: "{{ user.name }}"
+  aur:
+    name: ttf-mplus

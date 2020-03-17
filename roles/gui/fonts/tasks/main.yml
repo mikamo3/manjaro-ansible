@@ -3,3 +3,4 @@
 - include: noto.yml
 - include: cica.yml
 - include: nerd-fonts.yml
+- include: mplus.yml
