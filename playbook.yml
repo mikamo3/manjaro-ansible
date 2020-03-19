@@ -72,3 +72,4 @@
     - { role: numlockx, tags: ["numlockx"]}
     - { role: maim, tags: ["maim"]}
     - { role: python, tags: ["python"]}
+    - { role: leafpad, tags: ["leafpad"]}
