@@ -1,5 +1,12 @@
 ---
-- name: install i3-gaps
-  pacman:
-    name: i3-gaps,i3status,dmenu
+- name: install
+  block:
+    - name: from pacman
+      pacman:
+        name: i3-gaps,i3status,dmenu
+    - name: from aur
+      become: yes
+      become_user: "{{ user.name }}"
+      aur:
+        name: i3lock-fancy
   when: '"i3-gaps" in gui.windowmanager.use'
