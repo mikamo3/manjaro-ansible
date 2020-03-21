@@ -5,3 +5,9 @@
       - thunar
       - thunar-volman
       - gvfs
+- name: configure
+  lineinfile:
+    path: /usr/share/gvfs/mounts/network.mount
+    regexp: '^AutoMount='
+    line: 'AutoMount=false'
+    insertafter: EOF 
