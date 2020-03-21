@@ -74,3 +74,4 @@
     - { role: python, tags: ["python"]}
     - { role: leafpad, tags: ["leafpad"]}
     - { role: lm_sensors, tags: ["lm_sensors"]}
+    - { role: ffmpeg, tags: ["ffmpeg"]}
