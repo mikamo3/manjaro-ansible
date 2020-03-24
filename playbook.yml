@@ -77,3 +77,4 @@
     - { role: ffmpeg, tags: ["ffmpeg"]}
     - { role: ghq, tags: ["ghq"]}
     - { role: gpick, tags: ["gpick"]}
+    - { role: imagemagick, tags: ["imagemagick"]}
