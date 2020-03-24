@@ -76,3 +76,4 @@
     - { role: lm_sensors, tags: ["lm_sensors"]}
     - { role: ffmpeg, tags: ["ffmpeg"]}
     - { role: ghq, tags: ["ghq"]}
+    - { role: gpick, tags: ["gpick"]}
